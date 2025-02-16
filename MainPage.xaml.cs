@@ -1,5 +1,3 @@
-﻿using System;
-using System.Net.Http;
 using Newtonsoft.Json.Linq;
 
 namespace AL_Sem_3_Course_Project_I_Give_Up

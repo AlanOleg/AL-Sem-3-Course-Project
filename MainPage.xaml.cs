@@ -9,7 +9,6 @@ namespace AL_Sem_3_Course_Project_I_Give_Up
         private readonly HttpClient _httpClient;
         private const string ApiKey = "0bbef86f96702509c74ef6e45f607d0598ac1066";
         private const string GeoApiKey = "8a0d2c22fd904ec49b9af73c93f9a40c";
-        private const string apiUrl = "http://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=";
         private string lat { get; set; }
         private string lon { get; set; }
 
@@ -41,7 +40,7 @@ namespace AL_Sem_3_Course_Project_I_Give_Up
             // Пробуем получить ответ
             try
             {
-                var response = await _httpClient.GetStringAsync($"{apiUrl}{ipAddress}&token={ApiKey}");
+                var response = await _httpClient.GetStringAsync($"http://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip={ipAddress}&token={ApiKey}");
                 var json = JObject.Parse(response);
 
                 // Проверяем найден ли город

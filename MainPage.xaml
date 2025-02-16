@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AL_Sem_3_Course_Project_I_Give_Up.MainPage">
+
+    <StackLayout Padding="30">
+        <Label Text="Введите IP-адрес города:"
+               FontSize="20" 
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="NumberEntry" 
+               Placeholder="IP-адрес"
+               HorizontalOptions="Center"
+               Keyboard="Numeric" />
+
+        <Button Text="Найти город" 
+                HorizontalOptions="Center"
+                Clicked="OnCheckEvenClicked" />
+
+        <Label x:Name="ResultLabel" 
+               FontSize="20" 
+               HorizontalOptions="Center" 
+               TextColor="Black" />
+
+        <Image x:Name="MapImage"
+               HeightRequest="300"
+               WidthRequest="300"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>

@@ -23,8 +23,8 @@
                TextColor="Black" />
 
         <Image x:Name="MapImage"
-               HeightRequest="300"
-               WidthRequest="300"
+               HeightRequest="500"
+               WidthRequest="800"
                HorizontalOptions="Center" />
     </StackLayout>
 </ContentPage>

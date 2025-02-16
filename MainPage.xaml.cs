@@ -65,7 +65,7 @@ namespace AL_Sem_3_Course_Project_I_Give_Up
         private string GenerateMapUrl(string lat, string lon)
         {
             // URL для получения изображения карты
-            return $"https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=800&height=600&center=lonlat:{lon},{lat}&zoom=11&apiKey={GeoApiKey}";
+            return $"https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=800&height=500&center=lonlat:{lon},{lat}&zoom=11&apiKey={GeoApiKey}";
         }
     }
 }
